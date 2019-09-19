@@ -21,7 +21,7 @@ public class Converter {
 
     String bandsToNumericValue(List<Band> bands) {
 
-        String tolerance = bands.get(3).getTolerance();
+        String tolerance = "20%";
         int value = (int) ((bands.get(0).getDigit()*10 + bands.get(1).getDigit())*(Math.pow(10, bands.get(2).getMultiplier())));
 
         String result = Integer.toString(value) + " ohms " + tolerance;
